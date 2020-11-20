@@ -15,7 +15,7 @@
             <div class="col-sm-12 col-lg-6 pr-0">
                 <img src="img/intro.jpg" alt="" class="img-fluid float-right rounded-left">
             </div>
-            <div class="col-sm-12 col-lg-5 bg-primary rounded-right">
+            <div class="col-sm-12 col-lg-5 rounded-right p-5 info">
                 <h5>De Volkswagen UP!</h5>
                 <p>De UP! is de kleinste en meest onderschatte wagen in de Volkswagen familie.
                     Met dit klein stadswagentje tilt Volkswagen het op dit moment zeer populaire A-segment naar een hoger niveau.

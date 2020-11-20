@@ -1,40 +1,38 @@
+/* Default Shit */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+:root{
+    --font-playfair: 'Roboto' !important;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+/* Section */
+
+section {
+    padding: 20px 0px;
+    font-family: var(--font-playfair) !important;
 }
 
-*{
-    font-family: 'Playfair Display', serif !important;
+.section-heading{
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
 }
-#occasies .container{
+
+
+/* Containers */
+#occasies .container, #motorisaties .container{
     max-width: 75% !important;
 }
 
 
-#occasies .col-lg-4,
-#occasies .col-md-6,
-#occasies .col-xs-12 {
-    padding: 10px;
-    width: 100%;
-}
 
-#color-overlay {
-    padding-bottom: 6rem;
-    height: 500px;
-    background-color: #153465;
-    opacity: 0.6;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-}
-
-
+/* Homepage */
 header.masthead {
     padding-top: 10.5rem;
     padding-bottom: 6rem;
@@ -62,43 +60,67 @@ header.masthead .masthead-inner {
     flex-direction: column;
 }
 
-
-section {
-    padding: 20px 0px;
+#color-overlay {
+    padding-bottom: 6rem;
+    height: 500px;
+    background-color: #153465;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
 }
 
-.section-heading{
-    font-size: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 2rem;
-}
 
 /* INTRO */
-#intro {
-    min-height: 100vh;
+
+#intro .info{
+    background: rgb(133, 184, 243);
+    font-weight: 600 !important;
+    letter-spacing: 1.3px !important;
+}
+
+
+/* Occasies */
+#occasies .col-lg-4,
+#occasies .col-md-6,
+#occasies .col-xs-12 {
+    padding: 10px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-#intro .section-inner{
-    height: 800px;
-    width: 75%;
-    background-color: lightgrey;
-    display: grid;
-    grid-template-rows: repeat(1,1fr 1fr 1fr 1fr);
+#occasies .card ul{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* .table-content{
-   
-}
 
-.intro{
+/* Motorisaties */
+.table-container{
+    width: 60%;
+    margin: 0 auto;
     
-} */
+}
 
+table, th, td {
+    border: 1px solid black;
+}
 
+/* Cards */
+@media screen and (max-width: 550px){
+    .card ul{
+        flex-direction: column;
+        
+    }
+}
 
 .card h4{
     font-size: clamp(20px, 1.9vw, 24px) !important;
@@ -122,33 +144,12 @@ section {
 }
 
 
-
-
-
 .preview-card ul{
     justify-content: space-between;
 }
 
-@media screen and (max-width: 550px){
-    
-    .card ul{
-        flex-direction: column;
-        
-    }
-}
 
-
-
-
-#occasies .card ul{
-    margin: 0;
-    padding: 0;
-    padding-left: 10px;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
+/* Video */
 
 .video iframe{
     border-radius: 22px !important;
@@ -162,7 +163,7 @@ section {
     
 }
 
-
+/* Contact */
 .contact-info a{
     color: white;
     text-decoration: none;
@@ -181,10 +182,4 @@ section {
     
 }
 
-#motorisaties .container{
-    max-width: 90% !important;
-}
 
-ul{
-    list-style-type: none;
-}

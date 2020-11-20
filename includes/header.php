@@ -10,9 +10,13 @@
     
 
     <!-- BOOTSTRAP & FONTAWESOME -->
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway%7CMontserrat:500,700" rel="stylesheet" type="text/css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/30128c7d4f.js" crossorigin="anonymous"></script>
+    
+    
     
 
     <!-- CSS -->
