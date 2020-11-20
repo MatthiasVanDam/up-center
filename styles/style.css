@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: 'Playfair Display', serif !important;
+}
+#occasies .container{
+    max-width: 75% !important;
+}
+
+
+#occasies .col-lg-4,
+#occasies .col-md-6,
+#occasies .col-xs-12 {
+    padding: 10px;
+    width: 100%;
+}
+
+#color-overlay {
+    padding-bottom: 6rem;
+    height: 500px;
+    background-color: #153465;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+
+header.masthead {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    height: 500px;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+header.masthead .masthead-heading {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+    position: absolute;
+    z-index: 5;
+    color: white;
+    width: 100%;
+}
+
+header.masthead .masthead-inner {
+    flex-direction: column;
+}
+
+
+section {
+    padding: 20px 0px;
+}
+
+.section-heading{
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+/* INTRO */
+#intro {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro .section-inner{
+    height: 800px;
+    width: 75%;
+    background-color: lightgrey;
+    display: grid;
+    grid-template-rows: repeat(1,1fr 1fr 1fr 1fr);
+}
+
+/* .table-content{
+   
+}
+
+.intro{
+    
+} */
+
+
+
+.card h4{
+    font-size: clamp(20px, 1.9vw, 24px) !important;
+}
+
+.card ul{
+    list-style: outside none none;
+}
+
+.card li {
+    font-size: clamp(14px, 2vw, 24px) !important;
+    margin-bottom: 10px;
+}
+
+.card li:nth-child(1){
+    padding-bottom: 5px !important;
+}
+
+.card li{
+    display: block;
+}
+
+
+
+
+
+.preview-card ul{
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 550px){
+    
+    .card ul{
+        flex-direction: column;
+        
+    }
+}
+
+
+
+
+#occasies .card ul{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.video iframe{
+    border-radius: 22px !important;
+    -webkit-border-radius: 22px !important;
+    -moz-border-radius: 22px;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07);
+    
+}
+
+
+.contact-info a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info{
+    border-top-left-radius: .8rem !important;
+    border-bottom-left-radius: .8rem !important;
+}
+
+.round{
+    border-radius: 0.7rem !important;
+}
+.photo1{
+    max-width: 80%;
+    
+}
+
+#motorisaties .container{
+    max-width: 90% !important;
+}
+
+ul{
+    list-style-type: none;
+}
