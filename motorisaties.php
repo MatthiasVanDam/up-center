@@ -1,12 +1,12 @@
-<?php include('includes/header.php')?>
-<?php include('includes/content-top.php')?>
+<?php include('includes/header.php') ?>
+<?php include('includes/content-top.php') ?>
 
 
-<main>
+<main id="motorisaties">
     <section class="pt-5">
-        <div class="container text-center">
-            <div>
-                <h5>Voordelen van een Volkswagen UP!</h5>
+        <div class="container">
+            <div class="voordeel-container">
+                <h2>Voordelen van een Volkswagen UP!</h2>
                 <ul>
                     <li>Zeer economisch rijden</li>
                     <li>Beste rijprestaties in zijn klasse</li>
@@ -16,8 +16,8 @@
                     <li>Lage onderhoudskosten</li>
                 </ul>
             </div>
-            <div>
-                <table style="width:80%" class="my-3 mx-auto">
+            <div class="table-container">
+                <table class="shadow">
                     <tr>
                         <th> </th>
                         <th>Benzine</th>
@@ -60,14 +60,14 @@
                         <td>€650</td>
                         <td>€360</td>
                     </tr>
+
                 </table>
-                <p>Op deze pagina gaan we iets dieper in op de verschillende types UP!</p>
 
             </div>
         </div>
     </section>
 
-    <section class="pb-5" id="motorisaties" >
+    <section class="pb-5" id="motorisaties-cards">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-lg-4 text-center">
@@ -94,8 +94,8 @@
             </div>
         </div>
     </section>
-    
+
 </main>
 
 
-<?php include('includes/footer.php')?>
+<?php include('includes/footer.php') ?>
