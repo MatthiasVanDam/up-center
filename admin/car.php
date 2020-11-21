@@ -1,25 +1,22 @@
-<?php include('includes/header.php')?>
-<?php include('includes/content-top.php')?>
-<?php 
+<?php include('includes/header.php') ?>
+<?php include('includes/content-top.php') ?>
+<?php
 include('includes/db-inc.php');
-if(empty($_GET['id'])){
-    header ('location: index.php');
+if (empty($_GET['id'])) {
+    header('location: index.php');
 }
 $carId = $_GET['id'];
-$msg="";
+$msg = "";
 $sql = "SELECT autos.id, autos.autonaam as autonaam, autos.motor, fotos.id as foto_id, fotos.fotonaam FROM autos left outer join fotos on autos.autonaam = fotos.auto_id where autos.id=$carId";
 $stmt = mysqli_stmt_init($con);
 
-if(!mysqli_stmt_prepare($stmt,$sql)){
+if (!mysqli_stmt_prepare($stmt, $sql)) {
     echo "sql statement failed";
-}
-else{
+} else {
 
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
     $row = mysqli_fetch_assoc($result);
-
-    
 }
 
 ?>
@@ -36,19 +33,19 @@ else{
                 <div class="card-titel text-center py-3">
                     <h3><?php echo $row['autonaam'] ?> <?php echo $row['motor'] ?></h3>
                 </div>
-                    
+
                 <!-- Card Info -->
                 <div class="row">
-                    <?php 
-                    mysqli_data_seek($result,0);
-                    if(!empty($row['fotonaam'])){
-                        while($row=mysqli_fetch_assoc($result)){
-                            echo' 
+                    <?php
+                    mysqli_data_seek($result, 0);
+                    if (!empty($row['fotonaam'])) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            echo ' 
                             <div class="col-xs-12 col-md-6 col-lg-3">
-                                <img class="img-fluid" src="img/auto_fotos/'.$row["fotonaam"].'">
+                            <img class="img-fluid" src="img/auto_fotos/' . $row["fotonaam"] . '">
                                 <div class="col-12">
                                     <div class="row">
-                                        <a href="includes/delete-photo.inc.php?id='.$row["foto_id"].'" class="btn btn-danger rounded-0 text-light text-center mx-auto my-3">
+                                        <a href="includes/delete-photo.inc.php?id=' . $row["foto_id"] . '" class="btn btn-danger rounded-0 text-light text-center mx-auto my-3">
                                             <i class="fas fa-trash-alt"></i>
                                         </a>
                                     </div>
@@ -57,7 +54,7 @@ else{
                             </div>
                             ';
                         }
-                    }else{
+                    } else {
                         $msg = 'Geen fotos beschikbaar';
                     }
 
@@ -65,7 +62,7 @@ else{
                     ?>
 
                     <p class="mx-auto text-center"><?php echo $msg ?></p>
-                        
+
                 </div>
 
             </div>
@@ -77,9 +74,8 @@ else{
 
     </div>
 
-    </div>
+</div>
 
 </div>
 
-<?php include('includes/footer.php')?>
-
+<?php include('includes/footer.php') ?>
