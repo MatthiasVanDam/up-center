@@ -50,8 +50,9 @@ if (isset($_POST['car-submit'])) {
                     exit();
                 } else {
                     $id = $_GET['id'];
-                    $sql = "SELECT * FROM autos";
+                    $sql = "SELECT * FROM autos where id=$id";
                     $stmt = mysqli_stmt_init($con);
+
                     if (!mysqli_stmt_prepare($stmt, $sql)) {
                         echo "Sql statement failed";
                     } else {

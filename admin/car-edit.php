@@ -36,7 +36,8 @@
         </div>
 
         <div class="col-8">
-            <form action="includes/edit-car.inc.php?id=<?php echo $row['id'] ?>" method="post" enctype="multipart/form-data">
+
+            <form action="includes/edit-car.inc.php?id=<?php echo $row['id'] ?>" method="post">
 
                 <div class="row">
 
